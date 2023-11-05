@@ -8,6 +8,13 @@ import com.github.psambit9791.jdsp.transform.Hilbert;
 import tryout.emd.Emd;
 import tryout.emd.EmdDataImpl;
 
+// --------------------------------------------------------------
+// EMD: Empirical mode decomposition
+// --------------------------------------------------------------
+// The implementation for Processing using Java package tryout.emd which was build from the following Java code
+// https://stackoverflow.com/questions/10230106/is-there-some-empirical-mode-decomposition-library-in-java
+// The above code is from C implementation ( https://code.google.com/p/realtime-emd/ ) and translated it to Java.
+// --------------------------------------------------------------
 
 class Emd2 {
 
@@ -41,6 +48,19 @@ class Emd2 {
     return _imfs;
   }
 }
+
+
+// --------------------------------------------------------------
+// VMD: Variational mode decomposition
+// --------------------------------------------------------------
+// The implementation for Processing from the following Python code
+//  vmdpy: Variational mode decomposition in Python
+//  Function for decomposing a signal according to the Variational Mode Decomposition (Dragomiretskiy and Zosso, 2014) method.
+//  https://github.com/vrcarva/vmdpy
+//  Paper available at: https://doi.org/10.1016/j.bspc.2020.102073
+// Vinícius R. Carvalho, Márcio F.D. Moraes, Antônio P. Braga, Eduardo M.A.M. Mendes, Evaluating five different adaptive decomposition methods for EEG signal seizur
+// detection and classification, Biomedical Signal Processing and Control, Volume 62, 2020, 102073, ISSN 1746-8094, https://doi.org/10.1016/j.bspc.2020.102073.
+// --------------------------------------------------------------
 
 class Vmd {
 
@@ -749,6 +769,18 @@ double abs_double(double _uDiff) {
   return _temp;
 }
 
+
+// --------------------------------------------------------------
+// EWT: Empirical Wavelet Transform
+// --------------------------------------------------------------
+// The implementation for Processing from the following Python code
+//  ewtpy - Empirical wavelet transform in Python
+//  https://github.com/vrcarva/ewtpy
+//  Paper available at https://doi.org/10.1016/j.bspc.2020.102073.
+//  Vinícius R. Carvalho, Márcio F.D. Moraes, Antônio P. Braga, Eduardo M.A.M. Mendes, Evaluating five different adaptive decomposition methods for EEG signal seizure
+// detection and classification, Biomedical Signal Processing and Control, Volume 62, 2020, 102073, ISSN 1746-8094, https://doi.org/10.1016/j.bspc.2020.102073.
+// --------------------------------------------------------------
+
 //================================================================
 // Empirical Wavelet Transformation. EWT_ver01
 // Processing Supported with JAVA
@@ -798,6 +830,19 @@ class Ewt {
     return imfs;
   }
 }
+
+
+// --------------------------------------------------------------
+// WMD: Wavelet Mode Decomposition
+// --------------------------------------------------------------
+// The implementation for Processing from the following Python code for EWT
+// The modification from EWT: boundary frequencies were fixed
+//  ewtpy - Empirical wavelet transform in Python
+//  https://github.com/vrcarva/ewtpy
+//  Paper available at https://doi.org/10.1016/j.bspc.2020.102073.
+//  Vinícius R. Carvalho, Márcio F.D. Moraes, Antônio P. Braga, Eduardo M.A.M. Mendes, Evaluating five different adaptive decomposition methods for EEG signal seizure
+// detection and classification, Biomedical Signal Processing and Control, Volume 62, 2020, 102073, ISSN 1746-8094, https://doi.org/10.1016/j.bspc.2020.102073.
+// --------------------------------------------------------------
 
 class Ewt2 {
 
