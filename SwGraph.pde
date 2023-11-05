@@ -1,3 +1,12 @@
+//------------------------------------------------------
+// SwGraph library was made by Teiji Sawa, MD, PhD
+// Department of Anesthesiology, Kyoto Prefectural University of Medicine
+// Kyoto, Japan. Nov 2023.
+// The original concept of this graph library was from Visualizing Data: Exploring and Explaining Data 
+// with the Processing Environment Visualizing Data: Exploring and Explaining Data with the Processing Environment
+// by Ben Fry, O'Reilly Media, ISBN-10 ‏ : ‎ 0596514557
+//------------------------------------------------------
+
 class Graph {
   float xdataMin = 0;
   float xdataMax = 0;

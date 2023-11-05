@@ -4,6 +4,13 @@
 String subscript_1 = "v0.42 by Teiji SAWA, Nov-4-2023.";
 String subscript_2 = "Anesthesiology, Kyoto Prefectural University of Medicine.";
 
+//-------------------------------------------------------------------------------
+// For FFT and Complex calculation, "Commons Math: The Apache Commons Mathematics Library"
+// https://commons.apache.org/proper/commons-math/
+// (commons-math3-3.6.1) was utilized as a jar file.
+// commons-math3-3.6.1.jar in "code" folder
+//-------------------------------------------------------------------------------
+
 import processing.serial.*;
 import org.apache.commons.math3.transform.FastFourierTransformer;
 import org.apache.commons.math3.complex.Complex;

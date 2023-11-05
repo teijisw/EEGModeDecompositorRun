@@ -1,3 +1,8 @@
+//-------------------------------------------------------------------
+// FloatTable Class was implemented from "Visualizing Data: Exploring and Explaining Data with the Processing Environment", 
+// written by Ben Fry. O'Reilly Media. ISBN-10 ‏ : ‎ 0596514557
+//-------------------------------------------------------------------
+
 // first line of the file should be the column headers
 // first column should be the row titles
 // all other values are expected to be floats
