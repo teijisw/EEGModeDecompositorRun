@@ -52,18 +52,18 @@ class Graph {
     float[] yvalue = _y;
 
     float x = map(xdataMin, xdataMin, xdataMax, plotX1, plotX2);
-    float y = map(ydataMin, ydataMin, ydataMax, plotX1, plotX2);
-    float y_max = map(ydataMax, ydataMin, ydataMax, plotX1, plotX2);
-    float y_min = map(ydataMin, ydataMin, ydataMax, plotX1, plotX2);
+    float y = map(ydataMin, ydataMin, ydataMax, plotY2, plotY1);
+    float y_max = map(ydataMax, ydataMin, ydataMax, plotY2, plotY1);
+    float y_min = map(ydataMin, ydataMin, ydataMax, plotY2, plotY1);
     float x_pre = map(xdataMin, xdataMin, xdataMax, plotX1, plotX2);
-    float y_pre = map(ydataMin, ydataMin, ydataMax, plotX1, plotX2);
+    float y_pre = map(ydataMin, ydataMin, ydataMax, plotY2, plotY1);
 
     for (int i= 0; i<1024; i++) {
       if (xvalue[i] <= xdataMax) {
         x = map(xvalue[i], xdataMin, xdataMax, plotX1, plotX2);
         y = map(yvalue[i], ydataMin, ydataMax, plotY2, plotY1);
-        y_max = map(ydataMax, ydataMin, ydataMax, plotY2, plotY1);
-        y_min = map(ydataMin, ydataMin, ydataMax, plotY2, plotY1);
+        //y_max = map(ydataMax, ydataMin, ydataMax, plotY2, plotY1);
+        //y_min = map(ydataMin, ydataMin, ydataMax, plotY2, plotY1);
         if (xvalue[i] <= xdataMax && yvalue[i] <= ydataMax && yvalue[i] >= ydataMin) {
           strokeWeight(1.5);
           stroke(#00ff00);
